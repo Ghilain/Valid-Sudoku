@@ -14,6 +14,10 @@ var isValidSudoku = function(board) {
             let number = board[i][j];
             // add if condition to check if number not charcter
             if (number != '.') {
+                block = `${number} in block ${parseInt(i / 3)}-${parseInt(j / 3)}`;
+                // If condition to check if number has not found in row
+                if (!found.has(number + " in row " + i) &&
+                    !found.has(number + " in column " + j) &&
 
             }
         }
