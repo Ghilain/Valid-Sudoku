@@ -18,7 +18,11 @@ var isValidSudoku = function(board) {
                 // If condition to check if number has not found in row
                 if (!found.has(number + " in row " + i) &&
                     !found.has(number + " in column " + j) &&
-
+                    !found.has(block)) { //if not in block then add in
+                        found.add(number + " in row " + i)
+                        found.add(number + " in column " + j)
+                        found.add(block)
+                } 
             }
         }
     }
