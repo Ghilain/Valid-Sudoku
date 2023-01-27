@@ -22,7 +22,9 @@ var isValidSudoku = function(board) {
                         found.add(number + " in row " + i)
                         found.add(number + " in column " + j)
                         found.add(block)
-                } 
+                } else { // else return false
+                    return false;
+                }
             }
         }
     }
