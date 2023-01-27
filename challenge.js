@@ -28,4 +28,6 @@ var isValidSudoku = function(board) {
             }
         }
     }
+    // at the end of loop mast return true
+    return true;
 };
